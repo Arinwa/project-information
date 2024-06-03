@@ -44,7 +44,7 @@ const LatestProjectAssignments = () => {
         <thead>
           <tr>
             <th onClick={() => handleSort('employee_id')}>Employee ID</th>
-            <th onClick={() => handleSort('employee_name')}>Employee Name</th>
+            <th onClick={() => handleSort('full_name')}>Employee Name</th>
             <th onClick={() => handleSort('project_name')}>Project Name</th>
             <th onClick={() => handleSort('start_date')}>Start Date</th>
           </tr>

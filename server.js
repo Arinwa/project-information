@@ -75,7 +75,7 @@ app.get('/api/latest_project_assignments', async (req, res) => {
       .populate('employee_id', 'employee_id full_name')
       .populate('project_code', 'project_code project_name');
 
-    console.log(assignments); // Add this line to log the assignments in the backend console
+    //console.log(assignments); // Add this line to log the assignments in the backend console
 
     res.status(200).json(assignments);
   } catch (error) {
