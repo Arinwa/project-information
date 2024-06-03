@@ -72,8 +72,8 @@ app.get('/api/latest_project_assignments', async (req, res) => {
     const assignments = await ProjectAssignment.find()
       .sort({ start_date: -1 })
       .limit(5)
-      .populate('employee_id', 'full_name')
-      .populate('project_code', 'project_name');
+      .populate('employee_id', 'employee_id full_name')
+      .populate('project_code', 'project_code project_name');
 
     console.log(assignments); // Add this line to log the assignments in the backend console
 

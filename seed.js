@@ -15,11 +15,11 @@ const seedDatabase = async () => {
 
     // Adding new documents
     const employees = [
-      { employee_id: 'E001', full_name: 'Arinze Nwabude', email: 'arinze.nwabude@fullstack.com', hashed_password: 'hashedPassword1' },
-      { employee_id: 'E002', full_name: 'Deema Aloom', email: 'deema.aloom@fullstack.com', hashed_password: 'hashedPassword2' },
-      { employee_id: 'E003', full_name: 'Gifty Akaglah', email: 'alice.johnson@fullstack.com', hashed_password: 'hashedPassword3' },
-      { employee_id: 'E004', full_name: 'Emile Sone', email: 'emile.sone@fullstack.com', hashed_password: 'hashedPassword4' },
-      { employee_id: 'E005', full_name: 'Isam Hamo', email: 'isam.hamo@fullstack.com', hashed_password: 'hashedPassword5' },
+      { employee_id: 'E001', full_name: 'Isam Hamo', email: 'arinze.nwabude@fullstack.com', hashed_password: 'hashedPassword1' },
+      { employee_id: 'E002', full_name: 'Emile Sone', email: 'deema.aloom@fullstack.com', hashed_password: 'hashedPassword2' },
+      { employee_id: 'E003', full_name: 'Arinze Nwabude', email: 'alice.johnson@fullstack.com', hashed_password: 'hashedPassword3' },
+      { employee_id: 'E004', full_name: 'Gifty Akaglah', email: 'emile.sone@fullstack.com', hashed_password: 'hashedPassword4' },
+      { employee_id: 'E005', full_name: 'Deema Aloom', email: 'isam.hamo@fullstack.com', hashed_password: 'hashedPassword5' },
     ];
     const createdEmployees = await Employee.insertMany(employees);
 

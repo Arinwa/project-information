@@ -9,7 +9,6 @@ const LatestProjectAssignments = () => {
     const fetchAssignments = async () => {
       try {
         const response = await axios.get('/api/latest_project_assignments');
-        console.log(response.data); // Log the response data in the browser console
         setAssignments(response.data);
       } catch (error) {
         console.error('Error fetching project assignments:', error);
@@ -53,7 +52,7 @@ const LatestProjectAssignments = () => {
         <tbody>
           {assignments.map((assignment) => (
             <tr key={`${assignment.employee_id?._id}-${assignment.project_code?._id}`}>
-              <td>{assignment.employee_id?._id}</td>
+              <td>{assignment.employee_id?.employee_id}</td>
               <td>{assignment.employee_id?.full_name}</td>
               <td>{assignment.project_code?.project_name}</td>
               <td>{new Date(assignment.start_date).toLocaleDateString()}</td>
