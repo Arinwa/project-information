@@ -1,0 +1,26 @@
+{
+  "name": "project-information",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "seed": "node seed.js",
+    "install-client": "npm install --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.12"
+  }
+}
